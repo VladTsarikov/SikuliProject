@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test RoomStyler" verbose="1">
+    <suite-files>
+        <suite-file path="TestSuite.xml"/>
+    </suite-files>
+	<test name="RoomStylerTest">
+        <parameter name="furnitureName" value="Bradford Dining Table"/>
+        <parameter name="mainViewElementImage" value="tableMainView.png"/>
+        <parameter name="mainViewElementName" value="Table Main View Sikule Element"/>
+        <parameter name="compareViewElementImage" value="tableCompareView.png"/>
+        <parameter name="compareViewElementName" value="Table Compare View  Sikule Element"/>
+        <parameter name="deleteButtonElementImage" value="deleteFurnitureButton.png"/>
+        <parameter name="deleteButtonElementName" value="Table Compare View  Sikule Element"/>
+		<classes>
+			<class name="roomstyler.tests.RoomStylerTest" />
+        </classes>
+	</test>
+</suite>
